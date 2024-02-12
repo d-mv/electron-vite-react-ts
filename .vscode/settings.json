@@ -1,11 +1,39 @@
 {
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#70f14c",
+    "titleBar.activeForeground": "#011701",
+    "titleBar.inactiveBackground": "#4fae34",
+    "titleBar.inactiveForeground": "#011701"
   },
-  "[javascript]": {
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "javascript.suggest.autoImports": true,
+  "javascript.validate.enable": true,
+  "javascript.suggest.names": true,
+  "javascript.suggest.enabled": true,
+  // "javascript.inlayHints.variableTypes.enabled": true,
+  // "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.format.enable": true,
+  // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.suggest.paths": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifierEnding": "minimal",
+  "javascript.preferences.useAliasesForRenames": true,
+  "javascript.suggest.includeCompletionsForImportStatements": true,
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.autoClosingTags": true
 }
