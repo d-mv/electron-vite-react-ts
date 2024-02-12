@@ -19,6 +19,11 @@ module.exports = {
     '@electron-toolkit/eslint-config-ts/recommended',
     '@electron-toolkit/eslint-config-prettier'
   ],
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   plugins: [
     '@getify/proper-arrows',
     '@typescript-eslint',

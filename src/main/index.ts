@@ -1,6 +1,8 @@
-import { app, shell, BrowserWindow, ipcMain } from 'electron'
+/* eslint-disable promise/always-return */
+/* eslint-disable promise/catch-or-return */
+import { electronApp, is, optimizer } from '@electron-toolkit/utils'
+import { BrowserWindow, app, ipcMain, shell } from 'electron'
 import { join } from 'path'
-import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 
 function createWindow(): void {
@@ -50,6 +52,7 @@ app.whenReady().then(() => {
   })
 
   // IPC test
+  // eslint-disable-next-line no-console -- temp
   ipcMain.on('ping', () => console.log('pong'))
 
   createWindow()

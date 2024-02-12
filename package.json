@@ -19,16 +19,18 @@
     "build:win": "pnpm run build && electron-builder --win",
     "build:mac": "electron-vite build && electron-builder --mac",
     "build:linux": "electron-vite build && electron-builder --linux",
-    "install-logger": "cp node_modules/@mv-d/toolbelt/dist/logger.js public/logger.js"
+    "install-logger": "cp node_modules/@mv-d/toolbelt/dist/logger.js public/logger.js",
+    "test:ci": "",
+    "test:dependencies": "depcheck"
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.0",
     "@electron-toolkit/utils": "^3.0.0",
     "@mv-d/toolbelt": "^6.1.0",
-    "@stylistic/eslint-plugin": "^1.6.1",
     "electron-updater": "^6.1.7"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^1.6.1",
     "@electron-toolkit/eslint-config-prettier": "^2.0.0",
     "@electron-toolkit/eslint-config-ts": "^1.0.1",
     "@electron-toolkit/tsconfig": "^1.0.1",
@@ -37,6 +39,7 @@
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
+    "depcheck": "^1.4.7",
     "electron": "^28.2.0",
     "electron-builder": "^24.9.1",
     "electron-vite": "^2.0.0",
