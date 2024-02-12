@@ -13,11 +13,11 @@ export default defineConfig({
     resolve: {
       alias: {
         '@renderer': resolve('src/renderer/src'),
-        '@shared': resolve('src/renderer/src/shared/*'),
-        '@views': resolve('src/renderer/src/views/*'),
-        '@components': resolve('src/renderer/src/components/*'),
-        '@utils': resolve('src/renderer/src/utils/*'),
-        '@store': resolve('src/renderer/src/store/*')
+        '@shared': resolve('src/renderer/src/shared'),
+        '@views': resolve('src/renderer/src/views'),
+        '@components': resolve('src/renderer/src/shared/components'),
+        '@utils': resolve('src/renderer/src/shared/utils'),
+        '@store': resolve('src/renderer/src/shared/store')
       }
     },
     plugins: [react()]

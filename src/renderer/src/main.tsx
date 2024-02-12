@@ -1,3 +1,4 @@
+import '@mv-d/toolbelt/dist/logger'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 

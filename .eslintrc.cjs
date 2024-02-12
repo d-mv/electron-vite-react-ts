@@ -36,6 +36,7 @@ module.exports = {
     '@stylistic'
   ],
   rules: {
+    'import/no-unresolved': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     'jsdoc/require-jsdoc': 'off',
     'react/react-in-jsx-scope': 'off',

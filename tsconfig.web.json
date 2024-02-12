@@ -11,14 +11,14 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
+      "@views/*": ["src/renderer/src/views/*"],
+      "@components/*": ["src/renderer/src/shared/components/*"],
+      "@utils/*": ["src/renderer/src/shared/utils/*"],
+      "@store/*": ["src/renderer/src/shared/store/*"],
+      "@shared/*": ["src/renderer/src/shared/*"],
       "@renderer/*": [
         "src/renderer/src/*"
-      ],
-       "@shared/*": ["src/renderer/src/shared/*"],
-      "@views/*": ["src/renderer/src/views/*"],
-      "@components/*": ["src/renderer/src/components/*"],
-      "@utils/*": ["src/renderer/src/utils/*"],
-      "@store/*": ["src/renderer/src/store/*"],
+      ]
     }
   }
 }
